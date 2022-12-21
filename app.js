@@ -7,6 +7,8 @@ app.use(cors())
 
 const port = process.env.PORT
 
+app.use('/file', require('./routes/data'))
+
 app.listen(port, () => {
   console.log(`http://localhost:${port}`)
 })
