@@ -7,7 +7,7 @@ const getList = async (request, response) => {
     const data = await listFiles()
     
     response.send({data})
-  }catch (error){
+  }catch(error) {
     handleHttpError(response, 'ERROR_GET_LIST_FILES')
   }
 }
@@ -15,10 +15,10 @@ const getList = async (request, response) => {
 const getFile = async (request, response) => {
   try{
     const { file } = request.params
-    const data =  handleFileFormat(await filesData(file))
+    const data = handleFileFormat(await filesData(file))
 
     response.send({data})
-  }catch (error) {
+  }catch(error) {
     handleHttpError(response, 'ERROR_GET_FILE')
   }
 }
