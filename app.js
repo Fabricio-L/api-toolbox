@@ -14,7 +14,7 @@ app.get('/api/welcome', (req,res) => {
 app.use('/file', require('./routes/data'))
 
 app.listen(port, () => {
-  console.log(`http://localhost:${port}`)
+  console.log(`Listen on port: ${port}`)
 })
 
 module.exports = app
