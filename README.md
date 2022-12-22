@@ -3,7 +3,7 @@
 Steps to run this API:
 
 1) Clone reepository
-2) npm install
+2) `npm install`
 3) Create the `.env` file with the following information
 
     ```
